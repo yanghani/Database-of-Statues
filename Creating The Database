@@ -1,0 +1,123 @@
+#To create the Database
+
+create DATABASE statues;
+USE statues;
+
+#To create a table
+
+create table statues.statuestable (
+     Statuename_col text,
+     Material_col text,
+     Type_col text,
+     PlaceofDiscovery_col text,
+     Location_col text,
+     Description_col text)
+     
+#To make changes to the existing columns
+
+ALTER TABLE statues.statuestable
+ADD Material_col text;
+ALTER TABLE statues.statuestable
+Drop type_col;
+ALTER TABLE statues.statuestable
+DROP style_col;
+ALTER TABLE statues.statuestable
+DROP themes_col;
+ALTER TABLE statues.statuestable
+DROP name_col;
+ALTER TABLE statues.statuestable
+DROP style_col;
+ALTER TABLE statues.statuestable
+DROP themes_col;
+ALTER TABLE statues.statuestable
+ADD Statuename_col text;
+ALTER TABLE statues.statuestable
+ADD Type_col text;
+ALTER TABLE statues.statuestable
+ADD PlaceofDiscovery_col text;
+ALTER TABLE statues.statuestable
+ADD Location_col text;
+ALTER TABLE statues.statuestable
+ADD Description_col text;
+
+#To add data into single new column
+
+INSERT INTO statues.statuestable (Statuename_col)
+Values ("Nike of Samothrace");
+INSERT INTO statues.statuestable (Statuename_col)
+Values ("Laokoon");
+
+
+
+INSERT INTO statues.statuestable (Statuename_col)
+VALUES ("The Farness Bull", "Pasquino Group", "Blinding of Polyphemus", "Scythian Knife Grinder", "The Dying Gaul", "A Child Fighting a Goose", "Suffering Marsyas", "The Old Drunken Woman","Young Jockey", "The seated Boxer", "Ludovisi Gaul");
+INSERT INTO statues.statuestable (Statuename_col)
+VALUES ("The Farness Bull");
+INSERT INTO statues.statuestable (Statuename_col)
+VALUES ("Pasquino Group");
+
+INSERT INTO statues.statuestable (Material_col)
+VALUES ("Marble");
+INSERT INTO statues.statuestable (Material_col)
+VALUES ("Marble");
+INSERT INTO statues.statuestable (Material_col)
+VALUES ("Marble");
+INSERT INTO statues.statuestable (Material_col)
+VALUES ("Marble");
+
+#To add data into all columns
+
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "Nike of Samothrace", "Indivual", "Samothrace", "Louvre Museum", "Nike (chit\364n, belt, himation, half-draped, wing, deployed, posed, on); base (in the shape of, ship: prow, placed, on); base (rectangular)Condition of the work: The head, the neck, the two arms, the left part and the back of the bust, the right wing, the right foot, the left calf and foot, and the bottom of the drapery on the back of the statue is missing. The drapery has chips. All ends of the blocks at the front of the base are missing. The other blocks have gaps. A block located in the center of the upper seat at the back is missing, it is kept in the museum of Samothrace.The left breast, the belt area, the back of the bust, the right wing have been redone in plaster. The wings are held by a metal frame. The front of the upper seat of the base has been redone. The right knee, numerous drapery fragments and the left wing have been glued back together.");
+SELECT * from statues.statuestable;
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+Values ("Marble", "Laokoon", "Group", "Esquiline Hill in Rome", "Vatican Museums", "This statue group was found in 1506 on the Esquiline Hill in Rome and immediately identified as the Laoco\366n described by Pliny the Elder as a masterpiece of the sculptors of Rhodes. The story is that during the Trojan War, Laoco\366n, a priest of Apollo in the city of Troy, warned his fellow Trojans against taking in the wooden horse left by the Greeks outside the city gates. Athena and Poseidon, who were favouring the Greeks, sent two great sea-serpents which have wrapped their coils around Laoco\366n and his two sons and are killing them. From the Roman point of view, the death of these innocents was crucial to the decision of Aeneas, who heeded Laoco\366n's warning, to flee Troy, and this led to the eventual founding of Rome. Such an important sculpture could not escape the notice of Pope Julius II (1503-1513) who bought it immediately and had it displayed in the Statues Courtyard (Cortile delle Statue), making it the centrepiece of the collection. There has been much debate over the date of the statue, which would seem to have been made around 40-30 B.C.");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "The Farnese Bull", "Group","Caracalla's Thermal baths at Rome", "National Museum of Naples", "This statue group was found in 1506 on the Esquiline Hill in Rome and immediately identified as the Laoco\366n described by Pliny the Elder as a masterpiece of the sculptors of Rhodes. The story is that during the Trojan War, Laoco\366n, a priest of Apollo in the city of Troy, warned his fellow Trojans against taking in the wooden horse left by the Greeks outside the city gates. Athena and Poseidon, who were favouring the Greeks, sent two great sea-serpents which have wrapped their coils around Laoco\366n and his two sons and are killing them. From the Roman point of view, the death of these innocents was crucial to the decision of Aeneas, who heeded Laoco\366n's warning, to flee Troy, and this led to the eventual founding of Rome. Such an important sculpture could not escape the notice of Pope Julius II (1503-1513) who bought it immediately and had it displayed in the Statues Courtyard (Cortile delle Statue), making it the centrepiece of the collection. There has been much debate over the date of the statue, which would seem to have been made around 40-30 B.C.");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "Pasquino Group", "Group", "N.A", "N.A", "N.A");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("N.A", "Blinding of Polyphemus", "N.A", "N.A", "N.A", "N.A");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+Values ("Plaster/Marble(original)", "Scythian Knife Grinder", "Individual","N.A", "Galleria degli Uffizi, Florence", "N.A");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+Values ("Marble", "The Dying Gaul", "Individual","Villa Ludovisi", "Capitoline Museums", "With great pathos the statue depicts a wounded Gaul (Galatian). His attributes are very evident: shield, torques around his neck, complete nudity, disorered locks of hair and mustache. The very visible wound indicates the sculptor's intention to depict the warrior in the last moment of resistance to his pain di lui.");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "A Child Fighting a Goose", "Individual","Rome", "Glyptothek Museum", "N.A");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "Suffering Marsyas", "Individual","N.A", "N.A", "N.A");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "The Old Drunken Woman", "Individual","Rome, Villa Nomentana", "Musei Capitolini", "N.A");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Bronze", "Little Boy Pulling out A Thorn", "Individual","N.A", "Musei Capitolini", "N.A");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "The Old Woman", "Individual","N.A", "The MET", "During the Hellenistic period, artists became concerned with the accurate representation of childhood, old age, and even physical deformity. The range of subject matter was extended to include genre-like figures from the fringes of society. Fine, large-scale statues of fishermen, peasants, and aged courtesans became valued religious dedications, sometimes placed in a park-like setting within the
+sanctuary of the god. Although this statue is known familiarly as The Old Market Woman, it probably represents an aged courtesan on her way to a festival of Dionysos, the god of wine. Her delicate sandals and the ample material in her thin, elaborately draped chiton are a far cry from the rough garb of a peasant woman. The ivy wreath on her head marks her association with Dionysos, and the basket of fruit and the two chickens must be dedicatory gifts to the god or simply her own provisions for a long day of celebration. Veneration of Dionysos was widespread
+during the Hellenistic period, and ancient literary descriptions give an idea of the extraordinary processions and festivals held in his honor. The flattened composition of the figure is typical of sculpture created in the late second century B.C. The original work may have been dedicated in a sanctuary of Dionysos. The Roman copy could have decorated a garden.");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Bronze", "Young Jockey", "Group","Cape Artemision", "National Archaeological Museum", "Retrieved in 1928 and 1937 in pieces from the seafloor off Cape Artemision, north Euboea. The young jockey, probably african in origin, will have held the reins of the galloping horse in his left hand and a whip in his right. The contractions and furrows in his face, especially on the forehead, reveal agony and passion. The work is known as the Artemision Jockey.");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Bronze", "The Seated Boxer", "Individual","Palazzo Massimo", "Museo Nazionale Romano", "Seated Boxer a work of Lyssipus of Sikyon, a sculptor who worked for Alexander the Great, (or a work of Apollonius?, c. 225 BC ), Terme Museum Rome, Italy (Roman Copy 50 BC?). The boxer is wearing something like todays boxing gloves, the so-called himantes. He is looking maybe to the judges expecting the result of the box fight.
+As an extreme example of what was possible in the opposite direction nothing could be better than the original bronze statue ... It was found in Rome in 1885, and is essentially complete, except for the missing eyeballs; the seat is new. The statue represents a naked boxer of herculean frame, his hands armed with the aestus or boxing-gloves made of leather. He is just resting after an encounter, and no detail is spared to bring out the nature of his occupation. Swollen ears were the conventional mark of the boxer at all periods, but here the effect is still further enhanced by scratches and drops of blood. And the moustache is clotted with blood. From top to toe the statue exhibits the highest grade of technical skill. One would like very much to know what was the original purpose of the work. It may have been a votive statue, dedicated by a victorious boxer at Olympia or elsewhere. A bronze head of similar brutality found at Olympia bears witness that the refined statues of athletes produced in the best period of Greek art and set up in that precinct were forced at a later day to accept such low companionship. Or it may be that this boxer is not an actual person at all, and that the statue belongs to the domain of genre. In either case it testifies to the coarse taste of the age.");
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+
+VALUES ("Marble", "Ludovisi Gaul", "Group", "Palazzo Altemps, Rome", "N.A", "The statue depicts a Gaulish man or Galatian Celt who has just killed his wife and is holding her lifeless body in one arm and a sword in another, in an attempt to commit suicide. The sculpture is considered a good example of Hellenistic art because of its dramatic characteristics.[1] The postures of the characters are exaggerated and their bodies contort in every way. Each limb is spread out in different directions, which gives the feeling that the figures are coming to life. The statue is dramatic in many ways and represents what is known as Hellenistic Baroque art. Hellenistic sculptures used three main characteristics into their work to create a more lifelike aesthetic. They did this by incorporating expressive movement, realistic anatomy, and ornate details.The fluid motion of the bodies can be seen in how the man's arm flows in a serpentine motion into the woman's arm.");
+
+#To view the table
+
+SELECT * from statues.statuestable;
+
+#Try to delete the unnecessary row, but failed
+
+DELETE FROM statues.statuestable where Material_col= "NULL" AND Statuename_col = "Nike of Samothrace";
+
+#To "turn off" the safe modues, to delete the row
+SET SQL_SAFE_UPDATES=0;
+DELETE FROM statues.statuestable where Material_col= NULL AND Statuename_col = "Nike of Samothrace";
+DELETE FROM statues.statuestable WHERE Type_col="Indivual" AND Location_col="Louvre Museum2";
+DELETE FROM statues.statuestable WHERE Statuename_col="Nike of Samothrace";
+INSERT INTO statues.statuestable (Material_col, Statuename_col, Type_col, PlaceofDiscovery_col, Location_col, Description_col)
+VALUES ("Marble", "Nike of Samothrace", "Individual", "Samothrace", "Louvre Museum", "Nike (chit\364n, belt, himation, half-draped, wing, deployed, posed, on); base (in the shape of, ship: prow, placed, on); base (rectangular)Condition of the work: The head, the neck, the two arms, the left part and the back of the bust, the right wing, the right foot, the left calf and foot, and the bottom of the drapery on the back of the statue is missing. The drapery has chips. All ends of the blocks at the front of the base are missing. The other blocks have gaps. A block located in the center of the upper seat at the back is missing, it is kept in the museum of Samothrace.The left breast, the belt area, the back of the bust, the right wing have been redone in plaster. The wings are held by a metal frame. The front of the upper seat of the base has been redone. The right knee, numerous drapery fragments and the left wing have been glued back together.");
+
+#"Turn on" the safe modus to prevent important data from deleting by mistake
+SET SQL_SAFE_UPDATES=1;
